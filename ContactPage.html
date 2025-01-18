@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+
+</head>
+<body>
+    <nav>
+        <img src="bb4097_e27a02304a694135ba04a333f075c9bc~mv2.webp" alt="EmpowerSTEM Logo">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a href="#">About Us</a>
+            <ul class="dropdown">
+              <li><a href="OurMission.html">Our Mission</a></li>
+              <li><a href="StartChapter.html">Start Your Own Chapter</a></li>
+            </ul>
+          </li>
+          <li><a href="Events.html">Events</a></li>
+          <li><a href="ExecutiveBoard.html">Executive Board</a></li>
+          <li>
+            <a href="#">Chapters</a>
+            <ul class="dropdown">
+              <li><a href="ct.html">Connecticut</a></li>
+              <li><a href="IL.html">Illinois</a></li>
+              <li><a href="MA.html">Massachusetts</a></li>
+              <li><a href="GA.html">Georgia</a></li>
+              <li><a href="NC.html">North Carolina</a></li>
+            </ul>
+          </li>
+          <li><a href="ContactPage.html">Contact</a></li>
+        </ul>
+      </nav>
+      
+    
+    <!-- Contact Section -->
+    <section id="contact" class="contact-container">
+        <h1>Contact Us</h1>
+        <form action="https://api.web3forms.com/submit" method="POST">
+    
+            <!-- Hidden access key -->
+            <input type="hidden" name="access_key" value="46188508-7e89-4ba2-a097-a0e2c63e55db">
+    
+            <!-- Name and Email Row -->
+            <div class="row">
+                <input type="text" id="full-name" name="full-name" placeholder="Full Name" required>
+                <input type="email" id="email" name="email" placeholder="Email Address" required>
+            </div>
+    
+            <!-- Phone and Subject Row -->
+            <div class="row">
+                <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+            </div>
+    
+            <!-- Message Area -->
+            <div class="row">
+                <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+    
+            <!-- Redirect after submission -->
+            <input type="hidden" name="redirect" value="https://web3forms.com/success">
+    
+            <!-- Submit Button -->
+            <button type="submit" class="submit-button">Send Message</button>
+        </form>
+    </section>
+    
+
+    <footer>
+        <p>EmpowerSTEM &copy; 2024. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
